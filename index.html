@@ -280,7 +280,7 @@ function login(){
 
 let password=document.getElementById("password").value;
 
-if(password==="lavender123"){
+if(password==="priya@secret"){
 document.getElementById("login").style.display="none";
 document.getElementById("diary").style.display="block";
 }
@@ -293,3 +293,13 @@ alert("Wrong password!");
 
 </body>
 </html>
+function login() {
+    const password = document.getElementById("password").value;
+
+    if (password === "MySecret") {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("diary").style.display = "block";
+    } else {
+        alert("Incorrect password!");
+    }
+}

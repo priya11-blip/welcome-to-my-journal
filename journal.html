@@ -1,8 +1,237 @@
-<nav>
-    <a href="index.html">🏠 Home</a>
-    <a href="journal.html">📖 Journal</a>
-    <a href="mood.html">😊 Mood Tracker</a>
-    <a href="gallery.html">📷 Gallery</a>
-    <a href="quotes.html">💜 Quotes</a>
-    <a href="about.html">🌸 About</a>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Journal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+padding:40px;
+font-family:Poppins,sans-serif;
+background:linear-gradient(#ffd6df,#ffe8ef,#fff5f7);
+overflow-x:hidden;
+color:#7b4b5f;
+}
+
+/* Floating decorations */
+
+.butterfly{
+position:fixed;
+font-size:30px;
+animation:fly 18s linear infinite;
+opacity:0.8;
+}
+
+.b1{
+left:10%;
+animation-delay:0s;
+}
+
+.b2{
+left:70%;
+animation-delay:6s;
+}
+
+.b3{
+left:45%;
+animation-delay:12s;
+}
+
+@keyframes fly{
+0%{top:110%;}
+100%{top:-20%;}
+}
+
+.cloud{
+position:fixed;
+font-size:55px;
+animation:cloud 45s linear infinite;
+opacity:.5;
+}
+
+.c1{
+top:60px;
+left:-100px;
+}
+
+.c2{
+top:220px;
+left:-250px;
+animation-delay:20s;
+}
+
+@keyframes cloud{
+0%{transform:translateX(0);}
+100%{transform:translateX(1800px);}
+}
+
+.sparkle{
+position:fixed;
+font-size:22px;
+animation:twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle{
+from{opacity:.3;}
+to{opacity:1;transform:scale(1.3);}
+}
+
+.container{
+max-width:900px;
+margin:auto;
+}
+
+h1{
+font-family:Sacramento,cursive;
+font-size:75px;
+text-align:center;
+color:#ff6f91;
+}
+
+.subtitle{
+text-align:center;
+margin-bottom:40px;
+font-size:18px;
+}
+
+.card{
+background:white;
+padding:25px;
+margin:25px 0;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(255,140,170,.25);
+}
+
+h2{
+color:#ff6f91;
+}
+
+textarea{
+width:100%;
+height:170px;
+padding:15px;
+border:none;
+border-radius:15px;
+background:#fff6f8;
+resize:none;
+font-size:16px;
+outline:none;
+}
+
+input{
+width:100%;
+padding:15px;
+margin-top:10px;
+border:none;
+border-radius:15px;
+background:#fff6f8;
+font-size:16px;
+outline:none;
+}
+
+.mood{
+display:flex;
+justify-content:space-around;
+font-size:40px;
+margin-top:15px;
+cursor:pointer;
+}
+
+footer{
+margin-top:50px;
+text-align:center;
+font-size:18px;
+font-family:Sacramento;
+color:#ff7aa2;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="butterfly b1">🦋</div>
+<div class="butterfly b2">🦋</div>
+<div class="butterfly b3">🦋</div>
+
+<div class="cloud c1">☁️</div>
+<div class="cloud c2">☁️</div>
+
+<div class="sparkle" style="top:90px;left:18%;">✨</div>
+<div class="sparkle" style="top:200px;right:15%;">🌸</div>
+<div class="sparkle" style="top:500px;left:8%;">🎀</div>
+<div class="sparkle" style="top:650px;right:12%;">⭐</div>
+
+<div class="container">
+
+<h1>My Pink Journal 🦋</h1>
+
+<p class="subtitle">
+"A little place where dreams, memories and feelings bloom."
+</p>
+
+<div class="card">
+<h2>🌷 What's Your Mood Today?</h2>
+
+<div class="mood">
+😊 😍 😴 😢 😡 😇 🤍 🌸
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>💭 Today's Thoughts</h2>
+
+<textarea placeholder="Write everything that's on your mind..."></textarea>
+
+</div>
+
+<div class="card">
+
+<h2>🌸 Gratitude</h2>
+
+<textarea placeholder="Today I'm grateful for..."></textarea>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 Today's Goals</h2>
+
+<input placeholder="Goal 1">
+<br><br>
+<input placeholder="Goal 2">
+<br><br>
+<input placeholder="Goal 3">
+
+</div>
+
+<div class="card">
+
+<h2>✨ Little Reminder</h2>
+
+<p>
+You are growing every single day.
+Small progress is still progress.
+Believe in yourself. 🌷
+</p>
+
+</div>
+
+<footer>
+
+Made with ♡, butterflies and dreams
+
+</footer>
+
+</div>
+
+</body>
+</html>

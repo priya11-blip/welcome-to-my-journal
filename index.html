@@ -231,3 +231,65 @@ function welcome(){
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Private Diary</title>
+<style>
+body{
+    font-family:Arial;
+    background:#F4EEFF;
+    text-align:center;
+    padding:50px;
+}
+
+#diary{
+    display:none;
+}
+
+textarea{
+    width:80%;
+    height:250px;
+    border-radius:10px;
+    padding:15px;
+    font-size:16px;
+}
+button{
+    padding:10px 20px;
+    margin-top:20px;
+}
+</style>
+</head>
+<body>
+
+<h1>💜 My Private Diary</h1>
+
+<div id="login">
+    <input type="password" id="password" placeholder="Enter Password">
+    <br><br>
+    <button onclick="login()">Login</button>
+</div>
+
+<div id="diary">
+    <h2>Welcome 🌸</h2>
+    <textarea placeholder="Write your thoughts here..."></textarea>
+</div>
+
+<script>
+function login(){
+
+let password=document.getElementById("password").value;
+
+if(password==="lavender123"){
+document.getElementById("login").style.display="none";
+document.getElementById("diary").style.display="block";
+}
+else{
+alert("Wrong password!");
+}
+
+}
+</script>
+
+</body>
+</html>
